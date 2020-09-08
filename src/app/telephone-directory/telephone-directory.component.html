@@ -1,0 +1,70 @@
+
+
+<div >
+  <div style="    display: flex;
+  flex-direction: column;
+  align-items: center; margin-bottom: 11%;">
+  <h1>Welcome to the telephone searcher</h1>
+  <p>You can search for your data below</p>
+  <div class="searchbar" style="width: 40%;">
+    <div class="bar">
+      <input type="text"  style="width: 100%;" [formControl]="queryField" [(ngModel)]="searchInput" placeholder="Enter the name of your series"/>
+      <ul class="filter-select" *ngIf="searchInput.length >2 && clickedItem" style="height:18%">
+          <li *ngIf="(states | async)?.length == 0 && clickedItem" class="filter-select-list"><p class="artist-name"> 'No Content Available'</p> <span class="tags"></span></li>
+            <li *ngFor="let result of states | async" class="filter-select-list" (click)="editsearchResult(result)"><p class="artist-name">
+              <span>{{result.name }} </span> <span style="font-size:11px;">{{result.mobileNo}}</span></p>
+          <span class="tags"></span>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-6" style="margin-left:10%;">
+          <div class="searched-text-layout"> 
+  
+              <div class="carder">
+<div class="card-headers card-header-success card-top-selling" style="background: #4477aa !important">
+    <div class="card-item-layout">
+    <i class="material-icons pe-7s-notebook"></i>
+    <span>Search Directory Data</span>
+    </div>
+</div>
+<div class="carder-body table-responsive-items">
+  <div *ngIf="directoryList.size <1" style="margin:2%; width:90%;text-align:center;font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 22px;" ><i class="pe-7s-attention" style="font-size: x-large;
+margin-right: 1%;"></i> No Content Available</div>
+    <table class="carder-table" *ngIf="directoryList.size >0">
+      
+      <thead style="color: #4477aa !important">
+        <th>Name</th>
+        <th>MobileNo</th>
+        <th>Address</th>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let item of directoryList | keyvalue ;let i = index;" [ngClass]="activeCheck === i ? 'activeLen' : ''" style="font-family: 'Fira Sans Extra Condensed', sans-serif;">
+          <td>{{item.value.name}}</td>
+          <td>{{item.value.mobileNo}}</td>
+          <td>{{item.value.address}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+</div>
+</div>
+              </div>
+      </div>
+
+      <div class="col-md-4">
+        <ng-container *ngIf="copydirectoryList.size> 0 else check">
+        <app-search-tele-directory [searchData]="copydirectoryList" (searchDataChange)="searchDataChange($event)"></app-search-tele-directory>
+      </ng-container>
+      <ng-template #check>
+          <app-search-tele-directory [searchData]="directoryList" (searchDataChange)="searchDataChange($event)"></app-search-tele-directory>
+      </ng-template>
+      </div>
+
+    </div>
+  </div>
+ </div>

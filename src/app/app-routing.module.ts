@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-
-const routes: Routes = [];
+import { LoginComponent } from '../app/login/login.component'
+import  { InventoryComponent } from '../app/inventory/inventory.component'
+const routes: Routes = [
+  { path: '', redirectTo: '/inventory', pathMatch: 'full' },
+  {path:'login',component: LoginComponent},
+  {path:'inventory',component: InventoryComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

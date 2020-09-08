@@ -1,0 +1,58 @@
+
+ <div class="modal-header" style="border-bottom: 2px solid #e9ecef;">
+    <div class="form-row" style="width:100%;">
+      <div class="col-md-11 col-sm-11 col-xs-10">
+         <span class="cat-title" *ngIf="contentShow == 'edit'">Edit Items</span>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-2">
+     <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+       <span aria-hidden="true" style="font-size: xx-large;">&times;</span>
+     </button>
+      </div>
+    </div>
+   </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit(model)">
+    <!--<form class="form-row " name="form" (ngSubmit)="category.form.valid && onSubmit()" #category="ngForm" novalidate>-->
+   <div class="modal-body" style="border-bottom: 2px solid #e9ecef;">
+    
+         <div class="col-sm-12 col-md-12">
+       <div class="form-group">
+        
+         <div class="form-row marginbottom-one">
+           
+         <label class="col-sm-4 col-md-4 text-center" for="Name">Name <span class="text-mandatory">*</span></label>
+         <div class="input-group col-sm-7 col-md-7">
+           <input id="Code" class="form-control" [(ngModel)]="model.name"  placeholder="Name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"  >
+           <!--<div class="input-group-append">
+             <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+           </div>-->
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                             <div *ngIf="f.name.errors.required">Name is required</div>
+                         </div>
+         </div>
+         </div>
+          <div class="form-row">
+           
+         <label class="col-sm-4 col-md-4 text-center" for="Active">Mobile <span class="text-mandatory">*</span></label>
+         <div class="input-group col-sm-7 col-md-7">
+           
+                      <input id="Code" class="form-control" [(ngModel)]="model.mobileNo" (keypress)= "_keyPress($event)" placeholder="Mobile Number" formControlName="mobileNo"  [ngClass]="{ 'is-invalid': submitted && f.mobileNo.errors }"  >
+                   <div *ngIf="submitted && f.mobileNo.errors" class="invalid-feedback">
+                             <div *ngIf="f.mobileNo.errors.required">Mobile No is required</div>
+                             <div *ngIf="f.mobileNo.errors.pattern">Mobile is always number </div>
+                         </div>
+           <!--<div class="input-group-append">
+             <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+           </div>-->
+         </div>
+         </div>
+       </div>
+         </div>
+     
+     
+   </div>
+   <div class="modal-footer">
+     <button type="button" (click)="onSubmit(model)"class="btn btn-outline-dark btn-css" ><span>Edit</span></button>
+      <button type="button" (click)="activeModal.close('cancel operation')"class="btn btn-outline-dark btn-css" >Close</button>
+   </div>
+   </form>

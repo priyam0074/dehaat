@@ -1,0 +1,789 @@
+<header id="header-resoponsive" style="position: relative;">
+    <span class="watercolor watercolor69" style="background: url(assets/img/watercolor69.jpg) no-repeat center;background-size: 250px 222px;"></span>
+    <h1 id="logo">
+      <a style="background: url(assets/shapes/logohealth.png) center no-repeat;
+      background-size: 102px 60px;">Khosla sons</a>
+    </h1>
+    <div id="menu-button" (click)="sidebarToggle('menu-button')">
+      <div class="centralizer">
+        <div class="cursor">
+          <div id="nav-button"> 
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sidebar-->
+  <nav class="main-nav" id="myScrollspy">
+      <ul class="nav nav-tabs" role="tablist" data-spy="scroll">
+       
+        <li> <a  class="scroller"  (click)="scrollTo('section3')">Menu</a> </li>
+     
+        <li> <a  class="scroller"  (click)="scrollTo('section6')">About Us</a></li>
+       
+        <li> <a  class="scroller"  (click)="scrollTo('section7')">Contact</a></li>
+        <!-- <li> <a href="#section2" class="scroller" >About</a></li>
+        <li> <a href="#section3" class="scroller">Menu</a> </li>
+        <li> <a href="#section4" class="scroller">Reservations</a></li>
+        <li> <a href="#section5" class="scroller">Testiomonials</a></li>
+        <li> <a href="#section6" class="scroller">Gallery</a></li>
+        <li> <a href="#section7" class="scroller">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="containers hero-container w-container"><div>
+      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero-p-800.png 800w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero-p-1080.png 1080w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero-p-1600.png 1600w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e69155116b15a8e12fce774_PH-Home-Hero.png 1670w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 340px, (max-width: 991px) 50vw, 60vw" alt="" class="hero-img">
+    </div>
+    <div class="div-block-4">
+      <h1 class="hero-title" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">Own your health. Advance medicine.</h1>
+      <div class="div-block-53"><p class="hero-subtitle paragraph-lg" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">See your entire health history—at a glance. Contribute to medical research—anonymously and securely.</p></div></div>
+      <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="hero-cta">
+        <a href="https://app.picnichealth.com/sign-up" class="btns w-button">Get My Records</a></div></div>
+      </div>
+
+      <div>
+        Telephone directory
+        <app-telephone-directory></app-telephone-directory>
+      </div>
+
+      <div id="overview" class="overview">
+        <h2 class="heading-divider">Your medical records.<br>Now in your hands.</h2>
+        <div class="containers w-container">
+          <div class="w-row"><div class="w-col w-col-4 w-col-small-small-stack">
+            <div class="overview-item">
+              <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd55640efa8b8b3ac97021c_icon-complete.png" width="113" alt="" class="overview-graphic">
+              <h4 class="overview-heading">Paperwork is out</h4>
+              <p class="overview-paragrapgh">Flip through your complete records with the tap of a button.</p></div></div>
+              <div class="w-col w-col-4 w-col-small-small-stack">
+                <div class="overview-item overview-arrows"><img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5564151a5423d5ddf4a47_icon-organized.png" width="131" alt="" class="overview-graphic">
+                  <h4 class="overview-heading">A chronology of care</h4><p class="overview-paragrapgh">Keep organized with a timeline of your entire health history.</p></div></div>
+                  <div class="w-col w-col-4 w-col-small-small-stack">
+                    <div class="overview-item">
+                      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5595763fa7f38fc100f9a_icon-yours.png" width="111" alt="" class="overview-graphic">
+                      <h4 class="overview-heading">You are in control</h4><p class="overview-paragrapgh">Review and share—on your own terms.</p></div>
+                    </div></div></div>
+                  </div>
+                  <div class="timeline-section" (scroll)="scrollHandler($event)">
+                      <div class="containerTime w-container">
+                        <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b01" class="timeline-wrapper" >
+                          <div class="timeline-track-wrap"   >
+                            <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5d8a357f2198d31a0cbdca1d_timeline-logo.png" width="74" alt="" class="image-2">
+                            <div class="timeline-line">
+                              <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b05" class="timeline-fill" style="will-change: width, height; height: 2%;">
+                              </div>
+                              <div class="timeline-rail"></div>
+                              <!-- <div class="arrow-curve-wrapper">
+                                <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b08" class="arrow-curve-overlay" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                </div>
+                                <div class="arrow-curve-graphic"></div>
+                                <div class="arrow-curve-graphic-sm"></div>
+                              </div> -->
+                            </div>
+                          </div>
+                          <div class="timeline-content-wrapper">
+                            <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b0c" class="timeline-welcome" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+                              <div class="w-row">
+                                <div class="w-col w-col-stack">
+                                  <h2 class="heading-18">
+                                    Get a complete view of what matters most.</h2>
+                                    <p>PicnicHealth collects, digitizes, and encrypts all your medical records—then arranges everything in one intuitive timeline. No need to worry about a note from your doctor or the results from a lab. It’s all there for easy reference, right when you need it.</p>
+                                  </div>
+                                  <div class="column-15 w-col w-col-4 w-col-stack"></div>
+                                </div></div>
+                                
+                  <div id="timeline">
+                      <div class="row timeline-movement timeline-movement-top">
+                        <!-- <div class="timeline-badge timeline-future-movement">
+                            <p>2018</p>
+                        </div> -->
+                        <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b17" class="time-stamp" style="will-change: opacity; opacity: 1;">
+                            <div class="year-label">2018</div>
+                            <div class="date-wrap date-wrapper">
+                              <div class="month">oct</div><div class="day">23</div></div></div>
+                      </div>
+                      <div class="row timeline-movement">
+                        <div class="timeline-badge center-left">
+                          
+                        </div>
+                        <div class="col-sm-6  timeline-item">
+                          <div class="row">
+                            <div class="col-sm-11">
+                              <div class="timeline-panel credits  anim animate fadeInLeft">
+                                <ul class="timeline-panel-ul">
+                                  <div class="lefting-wrap">
+                                    <li class="img-wraping"><a href="#"><img src="http://via.placeholder.com/250/000000" class="img-responsive" alt="user-image" /></a></li>
+                                  </div>
+                                  <div class="righting-wrap">
+                                    <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                    <li><span class="causale" style="color:#000; font-weight: 600;">Developer </span> </li>
+                                    <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                                    <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/01/2018, 13:05"</small></p> </li>
+                                  </div>
+                                  <div class="clear"></div>
+                                </ul>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="row timeline-movement">
+                        <div class="timeline-badge center-right">
+                        
+                        </div>
+                        <div class="offset-sm-6 col-sm-6  timeline-item">
+                          <div class="row">
+                            <div class="offset-sm-1 col-sm-11">
+                              <div class="timeline-panel debits  anim animate  fadeInRight">
+                                <ul class="timeline-panel-ul">
+                                  <div class="lefting-wrap">
+                                    <li class="img-wraping"><a href="#"><img src="http://via.placeholder.com/250/000000" class="img-responsive" alt="user-image" /></a></li>
+                                  </div>
+                                  <div class="righting-wrap">
+                                    <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                    <li><span class="causale" style="color:#000; font-weight: 600;">Web Designer </span> </li>
+                                    <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                                    <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12/01/2018, 13:05"</small></p> </li>
+                                  </div>
+                                  <div class="clear"></div>
+                                </ul>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="row timeline-movement">
+                        <div class="timeline-badge center-left">
+                          
+                        </div>
+                        <div class="col-sm-6  timeline-item">
+                          <div class="row">
+                            <div class="col-sm-11">
+                              <div class="timeline-panel credits  anim animate  fadeInLeft">
+                                <ul class="timeline-panel-ul">
+                                  <div class="lefting-wrap">
+                                    <li class="img-wraping"><a href="#"><img src="http://via.placeholder.com/250/000000" class="img-responsive" alt="user-image" /></a></li>
+                                  </div>
+                                  <div class="righting-wrap">
+                                    <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                    <li><span class="causale" style="color:#000; font-weight: 600;">Engineer </span> </li>
+                                    <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                                    <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/01/2018, 13:05"</small></p> </li>
+                                  </div>
+                                  <div class="clear"></div>
+                                </ul>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row timeline-movement timeline-movement-top">
+                          <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b17" class="time-stamp" style="will-change: opacity; opacity: 1;">
+                              <div class="year-label">2019</div>
+                              <div class="date-wrap date-wrapper">
+                                <div class="month">oct</div><div class="day">23</div></div></div>
+                      </div>
+                      
+                      
+                      <div class="row timeline-movement">
+                        <div class="timeline-badge center-right">
+                        
+                        </div>
+                        <div class="offset-sm-6 col-sm-6  timeline-item">
+                          <div class="row">
+                            <div class="offset-sm-1 col-sm-11">
+                              <div class="timeline-panel debits  anim animate  fadeInRight">
+                                <ul class="timeline-panel-ul">
+                                  <div class="lefting-wrap">
+                                    <li class="img-wraping"><a href="#"><img src="http://via.placeholder.com/250/000000" class="img-responsive" alt="user-image" /></a></li>
+                                  </div>
+                                  <div class="righting-wrap">
+                                    <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                    <li><span class="causale" style="color:#000; font-weight: 600;">Web Designer </span> </li>
+                                    <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                                    <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12/01/2018, 13:05"</small></p> </li>
+                                  </div>
+                                  <div class="clear"></div>
+                                </ul>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="row timeline-movement">
+                        <div class="timeline-badge center-left">
+                          
+                        </div>
+                        <div class="col-sm-6  timeline-item">
+                          <div class="row">
+                            <div class="col-sm-11">
+                              <div class="timeline-panel credits  anim animate  fadeInLeft">
+                                <ul class="timeline-panel-ul">
+                                  <div class="lefting-wrap">
+                                    <li class="img-wraping"><a href="#"><img src="http://via.placeholder.com/250/000000" class="img-responsive" alt="user-image" /></a></li>
+                                  </div>
+                                  <div class="righting-wrap">
+                                    <li><a href="#" class="importo">Mussum ipsum cacilds</a></li>
+                                    <li><span class="causale" style="color:#000; font-weight: 600;">Engineer </span> </li>
+                                    <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                                    <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/01/2018, 13:05"</small></p> </li>
+                                  </div>
+                                  <div class="clear"></div>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="how-it-works">
+                    <div class="containers w-container">
+                      <h2 class="heading-divider">How it all works</h2>
+                      <div class="w-row">
+                        <div class="column-21 w-col w-col-4 w-col-small-small-stack">
+                          <div class="overview-item" style="text-align: center">
+                            <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9ae3f495440863de38_icon-clock.png" width="81" alt="" class="overview-graphic">
+                            <h4 class="overview-heading">Sign up in minutes</h4>
+                            <p class="overview-paragrapgh">Enter your doctor info, e-sign an authorization form, and we’ll take it from there.</p></div></div>
+                            <div class="column-22 w-col w-col-4 w-col-small-small-stack">
+                              <div class="overview-item overview-arrows" style="text-align: center"><img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc99f052932d856b4535_icon-work.png" width="94" alt="" class="overview-graphic">
+                                <h4 class="overview-heading">We do the work</h4><p class="paragraph-13 overview-paragrapgh">We’ll handle all the phone calls and faxes to retrieve your records.</p>
+                                <div class="dotted-arrow before"></div><div class="dotted-arrow after"></div></div></div>
+                                <div class="w-col w-col-4 w-col-small-small-stack"><div class="overview-item" style="text-align: center">
+                                  <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9925af6915c86b8ae0_icon-timeline.png" width="81" alt="" class="overview-graphic">
+                                  <h4 class="overview-heading">Receive your timeline</h4><p class="overview-paragrapgh">No paperwork, no messy files. Just an entire digitized history of your health.</p></div></div>
+                                </div></div>
+                              </div>
+
+                  <div class="data-section">
+                    <div class="containers w-container">
+                      <div class="div-block-5">
+                        <h3>Your private info stays private.</h3>
+                        <p class="paragraph-2">Your entire health history is protected and under your control.</p></div>
+                        <div class="columns-2 w-row">
+                          <div class="data-item-wrapper w-col w-col-6">
+                            <div class="data-item"><div>
+                              <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9af05293313b6b4537_icon-hipaa.png" width="66" alt="" class="image-16"></div>
+                              <div class="data-info"><h4 class="heading-3">HIPAA compliant<br></h4>
+                                <p class="paragraph-3">The highest standards of privacy set by law.<br></p></div></div></div>
+                                <div class="data-item-wrapper w-col w-col-6">
+                                  <div class="data-item"><div>
+                                    <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9a524e504340f5da00_icon-encryption.png" width="40" alt="" class="image-17"></div>
+                                    <div class="data-info"><h4 class="heading-3">End-to-end encryption<br></h4>
+                                      <p class="paragraph-3">The same technology banks use to keep your information secure.<br></p></div></div></div></div>
+                                      <div class="w-row">
+                                        <div class="data-item-wrapper w-col w-col-6">
+                                          <div class="data-item"><div>
+                                            <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9af9c49c94f4b5053b_icon-data-control.png" width="59" alt="" class="image-18"></div>
+                                            <div class="data-info">
+                                              <h4 class="heading-3">Under your control<br></h4>
+                                              <p class="paragraph-3">We’ll never share your information without explicit permission.<br></p></div></div></div>
+                                              <div class="data-item-wrapper w-col w-col-6">
+                                                <div class="data-item"><div>
+                                                  <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de7cc9add80e6315b8cc3b3_icon-partners.png" width="58.5" alt="" class="image-19"></div>
+                                                  <div class="data-info"><h4 class="heading-3">If in doubt, reach out<br></h4>
+                                                    <p class="paragraph-3">Questions about our privacy practices? We’re always here to help.<br></p></div></div></div></div>
+                                                    <div class="div-block-6"><a href="https://picnichealth.com/security-and-privacy" class="btns w-button">Learn More</a>
+                                                    </div></div>
+                                                  </div>
+
+                                                  <section class="cta-one">
+                                                      <img src="assets/shapes/cta-1-shape-1.png" class="cta-one__bg-shape-1" alt="">
+                                                      <img src="assets/shapes/cta-1-shape-2.png" class="cta-one__bg-shape-2" alt="">
+                                                      <div class="container" style="width: 100%;
+                                                      padding-right: 15px;
+                                                      padding-left: 15px;
+                                                      margin-right: auto;
+                                                      margin-left: auto;">
+                                                          <div class="cta-one__moc wow fadeInLeft animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInLeft; position: absolute;
+                                                          left: -62px;
+                                                          bottom: -150px;">
+                                                              <img src="assets/shapes/cta-1-moc-1.png" class="cta-one__moc-img" alt="">
+                                                          </div><!-- /.cta-one__moc -->
+                                                          <div class="row justify-content-end">
+                                                              <div class="col-lg-6">
+                                                                  <div class="cta-one__content">
+                                                                      <div class="block-title text-left">
+                                                                          <p>Best Application</p>
+                                                                          <h3>The Most Advanced
+                                                                            Patient Access & <br/>
+                                                                            Engagement Platform</h3>
+                                                                      </div><!-- /.block-title text-center -->
+                                                                      <div class="cta-one__text">
+                                                                          <p>
+                                                                              </p>
+                                                                      </div><!-- /.cta-one__text -->
+                                                                      <ul class="list-unstyled cta-one__list">
+                                                                          <li>
+                                                                              <i class="fa fa-check-circle"></i>
+                                                                              Diagnostics + Remote Monitoring
+                                                                          </li>
+                                                                          <li>
+                                                                              <i class="fa fa-check-circle"></i>
+                                                                              Schedulling + engagement via real time
+                                                                          </li>
+                                                                          <li>
+                                                                              <i class="fa fa-check-circle"></i>
+                                                                             Care Journey + Logistics
+                                                                          </li>
+                                                                      </ul><!-- /.list-unstyled -->
+                                                                      <div id="scroll-wrap">
+                                                                          <div class="main">
+                                                                            <div id="bookshelf" class="bookshelf">
+                                                                              <figure>
+                                                                                
+                                                                                <div class="perspective"><div class="book" data-book="book-1">
+                                                                                  <!--<div class="cover">-->
+                                                                                  <!--<div class="front">-->
+                                                                                    <!--<div class=" hard star" ></div>-->
+                                                                                    <!--<div> Page 1 </div>-->
+                                                                <!--<div> Page 2 </div>-->
+                                                                
+                                                                <!--</div>-->
+                                                                <!--<div class="inner inner-left"></div>-->
+                                                                <!--</div>-->
+                                                                <!--<div class="inner inner-right"></div>-->
+                                                                </div>
+                                                                </div>
+                                                                <div class="buttons"><a href="#">Open Manual</a> </div>
+                                                                                <div class="details"><span class="close-details"></span></div>
+                                                                              </figure>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                              <div class="bb-custom-wrapper" id="book-1">
+                                                                  <div class="bb-bookblock bb-vertical">
+                                                                    <div class="bb-item" style="display: block;">
+                                                                      <div class="bb-custom-side page-layout-3">
+                                                                        <div class="book-content text-center" tabindex="5000" style="overflow-y: hidden; outline: none;">
+                                                                          <div class="book-logo mt-30 d-none d-lg-block">
+                                                                            <img class="img-responsive center-block" src="../assets/img/book-logo13.png" alt="">
+                                                                          </div>
+                                                                          <div class="book-logo mt-30 d-none d-md-block d-lg-none">
+                                                                              <img class="img-responsive center-block"  style="width:129%;" src="../assets/img/book-logo13.png" alt="">
+                                                                            </div>
+                                                                          <div class="delivery-service">
+                                                                            <span class="text-white mb-10">delivery service</span>
+                                                                            <h2 class="text-white mb-10 mb-10 ">01-147-258-3690</h2>
+                                                                            <p class="mb-10 text-white">1234 North Avenue Luke, IN 360001</p>
+                                                                            <p class="text-white">support@website.com</p>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                      <div class="bb-custom-side page-layout-3" style="overflow-y: scroll;">
+                                                                        <div class="book-content" tabindex="5001" style="overflow-y: scroll; outline: none;">
+                                                                          <div class="row" >
+                                                                            <div class="col-lg-12 col-md-12">
+                                                                              <div class="section-title text-center">
+                                                                                <h2 class="text-white"> <span class="text-orange"></span> menu</h2>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="row mb-50 d-none d-lg-block" *ngFor="let foodItem of keys;let i = index;" >
+                                                                            <div class="col-lg-12 col-md-12" >
+                                                                              <div class="menu-body menu-left" >
+                                                                                <div class="menu-thumbnail">
+                                                                                  <!-- <img class="img-responsive center-block" src="../assets/img/01.png" alt=""> -->
+                                                                                </div>
+                                                                                <div class="menu-details" style="min-width: 30rem;">
+                                                                                  <div class="menu-title clearfix">
+                                                                                    <h4>{{foodItem}}</h4>
+                                                                                    <span class="price">{{i+1}}</span>
+                                                                                  </div>
+                                                                                  <!-- <div class="menu-description">
+                                                                                    <p>Salmon fillet in a rich red curry with coconut milk, sweet basil leaves ,pea aubergine, and kaffir lime leaves</p>
+                                                                                  </div> -->
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="row mb-50 d-none d-md-block d-lg-none" *ngFor="let foodItem of keys;let i = index;" >
+                                                                              <div class="col-lg-12 col-md-12" >
+                                                                                <div class="menu-body menu-left" >
+                                                                                  <div class="menu-thumbnail">
+                                                                                    <!-- <img class="img-responsive center-block" src="../assets/img/01.png" alt=""> -->
+                                                                                  </div>
+                                                                                  <div class="menu-details" style="min-width: 14rem;">
+                                                                                    <div class="menu-title clearfix">
+                                                                                      <h4>{{foodItem}}</h4>
+                                                                                      <span class="price">{{i+1}}</span>
+                                                                                    </div>
+                                                                                    <!-- <div class="menu-description">
+                                                                                      <p>Salmon fillet in a rich red curry with coconut milk, sweet basil leaves ,pea aubergine, and kaffir lime leaves</p>
+                                                                                    </div> -->
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          
+                                                                        </div>
+                                                                      </div>
+                                                      
+                                                      
+                                                                    </div>
+                                                                    <div class="bb-item"  *ngFor="let pageItem of pagesCount;let k=index;let t=index;">
+                                                                      <!-- <div *ngIf="pagesCount.length !=k+1"> -->
+                                                                      <div class="bb-custom-side page-layout-1"   *ngFor="let item of foodData.slice(k+t,k+t+2);let i = index;"  style="overflow-y: scroll;">
+                                                                        <div class="book-content"  tabindex="5002" style="overflow-y: scroll; outline: none;">
+                                                                          <div class="row" >
+                                                                            <div class="col-lg-12 col-md-12" *ngIf="item.categoryName !=undefined">
+                                                                              <div class="section-title text-center">
+                                                                                <h2 class="text-white"> <span class="text-orange">abcd</span> menu</h2>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-md-12" *ngIf="item.categoryName ==undefined">
+                                                                                <div class="section-title text-center">
+                                                                                  <h2 class="text-white"> <span class="text-orange">The</span> End</h2>
+                                                                                </div>
+                                                                              </div>
+                                                                          </div>
+                                                                         <div *ngIf="item.categoryData.length >0">
+                                                                          <div class="row mb-50" *ngFor="let itemdata of item.categoryData; let j = index;">
+                                                                            <div class="col-lg-12 col-md-12" > 
+                                                                              <div class="menu-body menu-left">
+                                                                                <div class="menu-thumbnail">
+                                                                                  <img class="img-responsive center-block" src="../assets/img/{{j+1}}.png" alt="">
+                                                                                </div>
+                                                                                <div class="menu-details">
+                                                                                  <div class="menu-title clearfix">
+                                                                                    <h4>{{itemdata.name}}</h4>
+                                                                                    <span class="price">{{itemdata.mrp | currency:"₹"}}</span>
+                                                                                  </div>
+                                                                                  <div class="menu-description d-none d-lg-block">
+                                                                                    <p>Grill boneless corn-fed chicken, marinated in coconut milk, lemongrass, galangal, turmeric and lime leaves</p>
+                                                                                  </div>
+                                                                                  <div class="menu-description d-none d-md-block d-lg-none">
+                                                                                      <p></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            
+                                                                          </div>
+                                                                         
+                                                                          </div>
+                                                                          <div *ngIf="item.categoryData.length == 0">
+                                                                              <div class="row mb-50" >
+                                                                              <div class="col-lg-12 col-md-12" style="text-align: -webkit-center;
+                                                                              padding: 20%;" >
+                                                                                  <div class="delivery-service">
+                                                                                      <h2 class="text-white mb-10 mb-10 ">Thanks You</h2>
+                                                                                      <h4 class="mb-10 text-white">you can click on back button to view the menu</h4>
+                                                                                      <p class="text-white">support@website.com</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                          </div>
+                                                                          
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                      
+                                                                          </div>
+                                                              
+                                                                    </div>
+                                                      <!--bbbooklet-->
+                                                                    <nav>
+                                                                      <a href="#" class="bb-nav-prev">prev</a>
+                                                                      <a href="#" class="bb-nav-next">Next</a>
+                                                                      <a href="#" class="bb-nav-close">Close</a>
+                                                                    </nav>
+                                                                </div>
+                                                                      <!-- /.thm-btn cta-one__btn -->
+                                                                  </div><!-- /.cta-one__content -->
+                                                              </div><!-- /.col-lg-6 -->
+                                                          </div><!-- /.row -->
+                                                      </div><!-- /.container -->
+                                                  </section>
+                                   <div class="testimonial-section">
+                                     <div data-animation="slide"  id="demo" class="carousel slide slider w-slider" data-ride="carousel">
+                                       <div class="mask w-slider-mask" >
+                                          <div class="carousel-item active" style="margin-top: 60px;">
+                                         <div class="slide w-slide" >
+                                          <div class="slide-inner">
+                                            <div class="containers w-container">
+                                              <div class="columns-3 w-row">
+                                                <div class="column-6 w-col w-col-4">
+                                                  <div class="author-avatar-wrapper avatar-wrapper-sm">
+                                                    <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e6112b9d21513146cba7576_chinara.png" alt="" class="author-photo bottom-left-sharp author-photo-sm">
+                                                    <div class="author-design-checkers"></div></div></div>
+                                                    <div class="w-col w-col-8">
+                                                      <div class="quote-title">REAL&nbsp;PEOPLE, REAL&nbsp;STORIES</div>
+                                                      <div class="quote-text">"Dealing with sickle cell has been a lifelong rollercoaster. The thought of my voice being heard in the world of medicine is really what motivated me to join this study. Not only to advocate for myself but others, and knowing the advocacy put forth will have both a powerful and positive impact.”</div>
+                                                      <div class="quote-author-wrapper">
+                                                        <div class="quote-border">
+
+                                                        </div>
+                                                        <div class="quote-author-info">
+                                                          <div class="author-name">Chinara</div>
+                                                          <div class="author-meta">PicnicHealth Research Participant</div></div></div></div></div></div></div>
+                                                        </div>
+                                                      </div>
+                                                        <div class="carousel-item" style="margin-top: 60px;">
+                                                          <div class=" slide w-slide">
+                                                            <div class="slide-inner">
+                                                              <div class="containers w-container">
+                                                                <div class="columns-3 w-row">
+                                                                  <div class="column-6 w-col w-col-4">
+                                                                    <div class="author-avatar-wrapper avatar-wrapper-sm">
+                                                                      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e614b71cadb542130615f65_mikey.png" alt="" class="author-photo bottom-left-sharp author-photo-sm"
+                                                                      ><div class="author-design-checkers"></div></div></div>
+                                                                      <div class="w-col w-col-8">
+                                                                        <div class="quote-title">Real people real stories</div>
+                                                                        <div class="quote-text">“I’m excited to contribute my medical history to your research team to better understand this challenging disease. Not only will your research improve others’ journeys, it allows me and my doctors complete visibility of my entire medical history in one electronic file.”<br></div>
+                                                                        <div class="quote-author-wrapper">
+                                                                          <div class="quote-border"></div>
+                                                                          <div class="quote-author-info">
+                                                                            <div class="author-name">Mike</div>
+                                                                            <div class="author-meta">PicnicHealth Research Participant</div></div></div></div></div></div></div>
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="carousel-item" style="margin-top: 60px;">
+                                                                            <div class=" slide w-slide">
+                                                                              <div class="slide-inner"><div class="containers w-container">
+                                                                                <div class="columns-3 w-row"><div class="column-6 w-col w-col-4">
+                                                                                  <div class="author-avatar-wrapper avatar-wrapper-sm">
+                                                                                    <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e600cbcd70b88bb56d4f69e_rkshin.jpg" alt="" class="author-photo bottom-left-sharp author-photo-sm"><div class="author-design-checkers"></div></div></div>
+                                                                                    <div class="w-col w-col-8"><div class="quote-title">OUR&nbsp;PARTNERS</div>
+                                                                                    <div class="quote-text">"Tracking down medical records from different offices across many years has always been a burden to both patients and providers, and a lack of records has led to wasted repetition of tests and omissions. This service is indispensable and a true game-changer for me and my patients!"</div>
+                                                                                    <div class="quote-author-wrapper"><div class="quote-border"></div>
+                                                                                    <div class="quote-author-info">
+                                                                                      <div class="author-name">Dr. Robert Kang Shin</div>
+                                                                                      <div class="author-meta">MD, Professor of Neurology, MedStar Georgetown University Hospital<br></div></div></div></div></div></div></div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                      <!-- <div class="left-arrow w-slider-arrow-left">
+                                                                                        <div class="w-icon-slider-left"></div>
+                                                                                      </div>
+                                                                                      <div class="right-arrow w-slider-arrow-right">
+                                                                                        <div class="w-icon-slider-right"></div>
+                                                                                      </div> -->
+                                                                                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                                                          <span class="carousel-control-prev-icon"></span>
+                                                                                        </a>
+                                                                                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                                                          <span class="carousel-control-next-icon"></span>
+                                                                                        </a>
+                                                                                        <ol class="carousel-indicators">
+                                                                                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                                                            <li data-target="#demo" data-slide-to="1"></li>
+                                                                                            <li data-target="#demo" data-slide-to="2"></li>
+                                                                                          </ol>
+                                                                                        <!-- <div class="slide-nav w-slider-nav w-round">
+                                                                                          <div class="w-slider-dot" data-wf-ignore=""></div>
+                                                                                          <div class="w-slider-dot" data-wf-ignore=""></div>
+                                                                                          <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                                                                                        </div> -->
+                                                                                      </div>
+                                                                                      </div>
+                                                                                    
+
+                                                                                
+
+                                                                          
+                                                                                      <!-- </div>
+                                                                                      </div>
+                                                                                      </div> -->
+                                                                                      
+                                                                                        <!-- <div class="timeline"> -->
+                                                                                          <!-- <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b17" class="time-stamp" style="will-change: opacity; opacity: 0;"> -->
+                                                                                            <!-- <div class="year-label">2018</div> -->
+                                                                                            <!-- <div class="date-wrap">
+                                                                                              <div class="month">oct</div><div class="day">23</div></div></div>
+                                                                                              <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b1f" class="timeline-column w-row" style="will-change: transform, opacity; transform: translate3d(10%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                                                                                                <div class="w-col w-col-8 w-col-stack">
+                                                                                                  <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e1db7c4325a131329_visits.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e1db7c4325a131329_visits-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e1db7c4325a131329_visits-p-800.png 800w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e1db7c4325a131329_visits.png 1324w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, (max-width: 991px) 41vw, 49vw" alt=""></div>
+                                                                                                  <div class="w-col w-col-4 w-col-stack"><h4>Access original notes and reports</h4><p>From doctor’s reports and imaging to notes from consults and office visits, your records are always ready for your review.</p></div></div></div> -->
+                                                                                                  <!-- <div class="timeline"><div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b29" class="timeline-column w-row" style="will-change: opacity, transform; opacity: 0; transform: translate3d(10%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                                                                    <div class="w-col w-col-8 w-col-stack">
+                                                                                                      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e501a816828db35a5_labs.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e501a816828db35a5_labs-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e501a816828db35a5_labs-p-800.png 800w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e501a816828db35a5_labs.png 1345w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, (max-width: 991px) 41vw, 49vw" alt="">
+                                                                                                    </div>
+                                                                                                    <div class="w-col w-col-4 w-col-stack">
+                                                                                                      <h4>Spot trends in your medical records</h4>
+                                                                                                      <p>View lab results with an easy-to-use graph. Better understand how your tests have changed over time, even across different doctors.</p>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                  <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b31" class="time-stamp" style="will-change: opacity; opacity: 0;">
+                                                                                                    <div class="date-wrap">
+                                                                                                      <div class="month">Nov</div>
+                                                                                                      <div class="day">11</div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div> -->
+                                                                                                <!-- <div class="timeline">
+                                                                                                  <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b38" class="timeline-column w-row" style="will-change: opacity, transform; opacity: 0; transform: translate3d(10%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                                                                    <div class="w-col w-col-8 w-col-stack">
+                                                                                                      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e5be4d8bd5292d499_xray.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e5be4d8bd5292d499_xray-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e5be4d8bd5292d499_xray-p-800.png 800w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd5643e5be4d8bd5292d499_xray.png 1324w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 77vw, (max-width: 991px) 41vw, 49vw" alt=""></div><div class="column-4 w-col w-col-4 w-col-stack">
+                                                                                                        <h4>See what the doctor sees</h4>
+                                                                                                        <p class="paragraph">Thanks to an FDA-approved DICOM image viewer, you can see your X-rays, CT scans, MRIs, and PET scans—right from your browser.</p>
+                                                                                                        <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd564f21db7c47268131d7c_fda.png" width="73" alt=""></div></div>
+                                                                                                        <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b40" class="time-stamp" style="will-change: opacity; opacity: 0;">
+                                                                                                          <div class="year-label">2020</div><div class="date-wrap">
+                                                                                                            <div class="month">Jan</div><div class="day">8</div>
+                                                                                                          </div></div></div> -->
+                                                                                                          <!-- <div data-w-id="0ac7fa30-9b95-9206-9ff6-0e6a8e089b48" class="timeline timeline-large-img home" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"><div class="columns w-row"><div class="w-col w-col-6 w-col-stack"><div class="syncing-content-block"><img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5dd567795be4d8ca5492e9d9_icon-calendar-sync.png" width="130" alt="">
+                                                                                                            <h3>Always up to date</h3>
+                                                                                                            <p>New visits? Switched doctors? Let us know. Our team will make sure your timeline is always up to date.</p></div>
+                                                                                                            <div class="last-text-info-segment"><h3>Keep doctors and loved ones in the loop</h3><p>Securely share your comprehensive medical history with doctors and loved ones, for better communication and care.<br><br>View our <a href="https://demo.picnichealth.com/" target="_blank">sample timeline</a> to get an idea of what your PicnicHealth timeline may look like.</p></div></div>
+                                                                                                            <div class="column-3 w-col w-col-6 w-col-stack"><img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e6162ba379281a659450a10_group-loop-lg.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e6162ba379281a659450a10_group-loop-lg-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e6162ba379281a659450a10_group-loop-lg.png 1722w" sizes="(max-width: 991px) 100vw, 72vw" alt="" class="image-4"></div></div></div>
+                                                                                                          </div> -->
+                                                                                                            <!-- <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e6162bab46a6ac81986a433_group-loop-sm.png" alt="" class="image-5"></div></div> -->
+                                                                                                          <!-- </div> -->
+
+                                                                                                         
+                                  <div class="info-split-section">
+                                    <div class="containers w-container">
+                                      <div class="columns-4 w-row">
+                                        <div class="column-7 w-col w-col-6">
+                                          <h2>Enabling breakthrough research.<br></h2>
+                                          <p class="paragraph-4">Want to be part of something bigger? PicnicHealth partners with some of the world’s leading researchers to develop breakthroughs in medicine.<br><br>By opting in to contribute anonymized medical data to research, you can join forces with thousands of others who are helping advance science. Because the more we know as a medical community, the more opportunity we have for discoveries that can change health for you, your loved ones, and people around the world.<br></p>
+                                          <div><a href="https://picnichealth.com/research" class="btns w-button">Learn More</a></div></div>
+                                          <div class="column-14 w-col w-col-6">
+                                            <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e615e9e75a7c6af7c6579c2_family-shapes.png" srcset="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e615e9e75a7c6af7c6579c2_family-shapes-p-500.png 500w, https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e615e9e75a7c6af7c6579c2_family-shapes.png 1394w" sizes="(max-width: 767px) 300px, 33vw" alt="" class="image-6 alt">
+                                          </div></div></div></div>
+
+                                          <div class="cta-section">
+                                            <div class="containers w-container">
+                                              <h3 class="text-white">Take charge of your health.</h3>
+                                              <div class="div-block-7"></div>
+                                              <a href="https://app.picnichealth.com/sign-up" class="btns btn-white w-button">Get My Records</a>
+                                            </div>
+                                          </div>
+
+                            <div class="footers">
+                              <div class="containers w-container">
+                                <div class="footer-content-inner">
+                                  <div class="footer-primary">
+                                    <div class="footer-brand-wrapper">
+                                      <a href="/" aria-current="page" class="w-inline-block w--current">
+                                        <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5e5ed6fa26f4ff4304658927_logo.svg" width="160" alt="" class="footer-logo-stamp"></a>
+                                        <p class="paragraph-sm"><strong>©2020 PicnicHealth</strong></p></div>
+                                        <div class="footer-nav-lists-wrapper">
+                                          <ul role="list" class="footer-nav-list w-list-unstyled">
+                                            <li class="footer-nav-li"><a href="/research" class="footer-nav-link">Research</a></li>
+                                            <li class="footer-nav-li"><a href="/data-ownership" class="footer-nav-link">Data Ownership</a></li>
+                                            <li class="footer-nav-li"><a href="/how-it-works" class="footer-nav-link">How it Works</a></li>
+                                            <li class="footer-nav-li"><a href="/pricing" class="footer-nav-link">Pricing</a></li>
+                                          </ul>
+                                          <ul role="list" class="footer-nav-list nav-secondary w-list-unstyled">
+                                            <li class="footer-nav-li"><a href="/blog" class="footer-nav-link">Blog</a></li>
+                                            <li class="footer-nav-li"><a href="https://help.picnichealth.com/" class="footer-nav-link">FAQs</a></li>
+                                            <li class="footer-nav-li"><a href="/diseases" class="footer-nav-link">Resources</a></li>
+                                            <li class="footer-nav-li"><a href="/contact" class="footer-nav-link">Contact</a></li>
+                                          </ul>
+                                          <ul role="list" class="footer-nav-list nav-secondary w-list-unstyled">
+                                            <li class="footer-nav-li"><a href="/about-us" class="footer-nav-link">About Us</a></li>
+                                            <li class="footer-nav-li"><a href="/careers" class="footer-nav-link">Careers</a></li>
+                                            <li class="footer-nav-li"><a href="/privacy-policy" class="footer-nav-link">Privacy Policy</a></li>
+                                            <li class="footer-nav-li"><a href="/terms-of-use" class="footer-nav-link">Terms of Use</a></li>
+                                          </ul>
+                                        </div></div>
+                                        <div class="footer-secondary">
+                                          <div class="div-block-65">
+                                            <a href="https://app.picnichealth.com/login" class="btns btn-sm w-button">
+                                              <strong>Log In</strong></a><ul role="list" class="social-list w-list-unstyled">
+                                                <li class="social-list-item"><a href="https://facebook.com/picnichealth" class="w-inline-block">
+                                                  <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de94331902d8de18e9baa4c_icon-fb.png" width="12" alt=""></a></li>
+                                                  <li class="social-list-item"><a href="https://twitter.com/PicnicHealth" class="w-inline-block">
+                                                    <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de9433249103c39dc9337bd_icon-tw.png" width="21" alt=""></a></li>
+                                                    <li class="social-list-item"><a href="https://www.linkedin.com/company/picnichealth/" class="w-inline-block">
+                                                      <img src="https://assets.website-files.com/5d8a20a3fb8583f35191fb48/5de94331bb83ab5850f92c7c_icon-li.png" width="19" alt=""></a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="div-block-66"><a href="mailto:hello@picnichealth.com?subject=Hello%20Picnichealth" class="link-2">hello@picnichealth.com</a>
+                                                    <a href="tel:415-801-0572" class="link-2">(415) 801-0572</a></div>
+                                                  </div></div>
+                                                </div>
+                                              </div>
+
+  
+
+  <section style="display: none"  class="testimonials" id="section6">
+    <div class="object-bottom-top">
+      <div class="object-right">
+        <img class="img-responsive" src="../assets/img/object05.png" alt="">
+      </div>
+    </div>
+    <div class="page-section-ptb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="section-title text-center">
+              <div class="title-separator">
+                <i class="glyph-icon flaticon-food-27"></i>
+              </div>
+              <h2 class="borderline-test"> <span class="text-orange">About </span><span class="watercolor watercolor25"> Us</span></h2>
+              <p>What Our Happy Clients say about us</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4" *ngFor="let test of testiomonalBanner; let i = index;">
+            <div class="testimonial-block left">
+              <div class="testimonial-avatar" style="position: relative;" >
+  
+                <img id="testomonialImg-btn{{i}}"  src="../assets/img/{{test['images'][0]['imageUrl']}}" alt="">
+              
+              </div>
+              <div class="testimonial-info clearfix" style="width:70%">
+                <div><strong >{{test.name}}</strong></div>
+                <span>{{test['images'][0]['imageName']}} </span>
+                <p >{{test['description']}} </p>
+              </div>
+            </div>
+            
+                <!-- <div class="edit-btn testomonialEdit-btn" *ngIf="test.testomonialEdit" style="font-size:x-large;top:0;color:red;" (click)="editTestomonial(test)">
+                    <i class="img-responsive pe-7s-config" ></i>
+                    </div> -->
+          </div>
+          <!-- <div class="col-lg-4 col-md-4">
+            <div class="testimonial-block left">
+              <div class="testimonial-avatar">
+                <img src="../assets/img/team02 .jpg" alt="">
+              </div>
+              <div class="testimonial-info clearfix">
+                <strong>Anne Smith </strong>
+                <span>kitchen Manager</span>
+                <p>For those of you who are serious about having more, doing more, giving more and being more, success is achievable with some understanding of what to do, discipline. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="testimonial-block left">
+              <div class="testimonial-avatar">
+                <img src="../assets/img/team03.jpg" alt="">
+              </div>
+              <div class="testimonial-info clearfix">
+                <strong>Felica Queen </strong>
+                <span>Head Waiter </span>
+                <p>He first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only few people. </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div id="back-to-top" style="display: block;">
+    <a class="top arrow" id="tope" (click)="scroller()"><i class="fa fa-long-arrow-up"></i></a>
+  </div>

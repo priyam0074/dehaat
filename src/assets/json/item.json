@@ -1,0 +1,170 @@
+[
+    {
+      "id": 4,
+      "category_id": 5,
+      "name": "Chicken Korma",
+      "code": "Chicken Korma",
+      "mrp": 140,
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "category_id": 5,
+      "name": "Mutton Korma",
+      "code": "Mutton Korma",
+      "mrp": 160,
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "category_id": 5,
+      "name": "Chicken Kali Mirch",
+      "code": "Chicken Kali Mirch",
+      "mrp": 150,
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "category_id": 5,
+      "name": "Chicken Biryani",
+      "code": "Chicken Biryani",
+      "mrp": 160,
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "category_id": 5,
+      "name": "Mutton Biryani",
+      "code": "Mutton Biryani",
+      "mrp": 210,
+      "is_active": 1
+    },
+    {
+      "id": 9,
+      "category_id": 5,
+      "name": "Rumali Roti",
+      "code": "Rumali Roti",
+      "mrp": 17,
+      "is_active": 1
+    },
+    {
+      "id": 10,
+      "category_id": 5,
+      "name": "Tandoori Roti",
+      "code": "Tandoori Roti",
+      "mrp": 23,
+      "is_active": 1
+    },
+    {
+      "id": 11,
+      "category_id": 5,
+      "name": "Butter Roti",
+      "code": "Butter Roti",
+      "mrp": 35,
+      "is_active": 1
+    },
+    {
+      "id": 12,
+      "category_id": 5,
+      "name": "Dal Makhni",
+      "code": "Dal Makhni",
+      "mrp": 110,
+      "is_active": 1
+    },
+    {
+      "id": 13,
+      "category_id": 7,
+      "name": "Special Kheer Kullad",
+      "code": "Special Kheer Kullad",
+      "mrp": 40,
+      "is_active": 1
+    },
+    {
+      "id": 14,
+      "category_id": 8,
+      "name": "Mineral Water",
+      "code": "Mineral Water",
+      "mrp": 20,
+      "is_active": 1
+    },
+    {
+      "id": 15,
+      "category_id": 6,
+      "name": "Chicken Tandoori",
+      "code": "Chicken Tandoori",
+      "mrp": 240,
+      "is_active": 1
+    },
+    {
+      "id": 16,
+      "category_id": 6,
+      "name": "Chicken Tandoori Afghani",
+      "code": "Chicken Tandoori Afghani",
+      "mrp": 240,
+      "is_active": 1
+    },
+    {
+      "id": 17,
+      "category_id": 6,
+      "name": "Chicken Malai Kabab",
+      "code": "Chicken Malai Kabab",
+      "mrp": 150,
+      "is_active": 1
+    },
+    {
+      "id": 18,
+      "category_id": 6,
+      "name": "Mutton Nalli Nihari",
+      "code": "Mutton Nalli Nihari",
+      "mrp": 180,
+      "is_active": 1
+    },
+    {
+      "id": 19,
+      "category_id": 6,
+      "name": "Mutton Tikka",
+      "code": "Mutton Tikka",
+      "mrp": 400,
+      "is_active": 1
+    },
+    {
+      "id": 20,
+      "category_id": 6,
+      "name": "Chicken Tikka",
+      "code": "SCT",
+      "mrp": 300,
+      "is_active": 1
+    },
+    {
+      "id": 21,
+      "category_id": 6,
+      "name": "hjh",
+      "code": "hjh",
+      "mrp": 7788,
+      "is_active": 1
+    },
+    {
+      "id": 22,
+      "category_id": 5,
+      "name": "hghg",
+      "code": "hghg",
+      "mrp": 897,
+      "is_active": 1
+    },
+    {
+      "id": 23,
+      "category_id": 8,
+      "name": "Beverages",
+      "code": "Beverages",
+      "mrp": 20,
+      "is_active": 1
+    },
+    {
+      "id": 24,
+      "category_id": 5,
+      "name": "Main Course",
+      "code": "Main Course",
+      "mrp": 8,
+      "is_active": 1
+    }
+   ]
